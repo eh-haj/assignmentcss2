@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*start of section 1 header*/
+.header{
+    width: 100%;
+    height: 900px;
+    background: linear-gradient(#000,rgba(0,0,0,0.5)), url(../imgs/comput1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.header .top{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.header .top h1{
+    color: #eee;
+    opacity: 0.8;
+}
+
+.header .top .menu a{
+    color: #eee;
+    text-decoration: none;
+    padding: 20px;
+    opacity: 0.6;
+}
+
+.header .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top:25%;
+    left: 33%;
+    right: 33%;
+    text-align: center;
+    
+}
+.header .center .title1{
+    color: #eee;
+    border-bottom:4px solid #fa1e0e;
+    font-size: 40px;
+    padding-bottom: 10px;
+    opacity: 0.7;
+}
+.header .center p{
+    color: #eee;
+    font-size: 14px;
+    padding: 15px 0;
+    opacity: 0.7;
+}
+.header .center button{
+    padding: 6px 20px;
+    background: #fa1e0e;
+    border-radius: 10px;
+    border-width: 0;
+}
+.header .center button a{
+    color: #eee;
+    opacity: 0.8;
+}
+
+.header .bottom{
+    background: #fa1e0e;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 5% 25% 2% 25%;
+}
+.header .bottom .title2{
+    padding-bottom: 10px;
+    color: #eee;
+    opacity: 0.7;
+    border-bottom: 4px solid #eee;
+}
+.header .bottom p{
+    padding: 15px 0;
+    color: #eee;
+    opacity: 0.8;
+}
+.header .bottom button{
+    padding: 4px 12px;
+    border-radius: 10px;
+    border-width: 0;
+}
+.header .bottom button a{
+    font-weight:800;
+    opacity: 0.9;
+}
+/*****************End of section 1 header***********/
+
+/*****************start of section 2 center***********/
+#center{
+    padding: 30px 0;
+    text-align: center;
+}
+#center h1{
+    padding: 15px 0;
+}
+#center .servic{
+    display: flex;
+    padding: 20px 10%;
+}
+#center .servic .card{
+    flex-basis: 25%;
+}
+#center .servic .card i{
+    padding-bottom: 10px;
+}
+#center .servic .card h2{
+    padding: 10px 0;
+}
+
+#center .imgs{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+#center .imgs img{
+    width: 449px;
+    height: 300px;
+}
+
+#center .download{
+    background: #000;
+    padding: 45px 0;
+}
+#center .download h1{
+    color: #eee;
+}
+#center .download button{
+    padding: 10px 25px;
+    border-radius: 13px;
+    border-width: 0;
+}
+#center .download button a{
+    font-weight: 800;
+    opacity: 0.8;
+}
+/*****************End of section 2 center***********/
+/*****************start of section 3 contact***********/
+#contact {
+    padding-top: 20px;
+    text-align: center;
+}
+#contact .par-contact{
+padding: 20px 30%;
+}
+#contact .callus{
+    display: inline-flex;
+}
+#contact .callus div{
+    padding: 20px 20px;
+    
+}
+/****************************************@media screen*************/
+@media screen and (max-width: 700px){
+    .header .top{
+        flex-direction: column;
+        text-align: center;
+    }
+    .header .top h1{
+        padding-bottom: 15px;
+    }
+    
+    .header .center{
+        left: 10%;
+        right: 10%;
+    }
+    .header .center .title1{
+        font-size: 
+        30px;
+    }
+    
+    #center .servic{
+        flex-direction: column;
+    }
+    #center .servic .card{
+        padding: 20px 0;
+    }
+    #center .servic .card i{
+        padding-bottom: 0;
+    }
+    
+    #center .imgs{
+        flex-direction: column;
+    }
+    #center .imgs img{
+        width: 100%;
+    }
+}
